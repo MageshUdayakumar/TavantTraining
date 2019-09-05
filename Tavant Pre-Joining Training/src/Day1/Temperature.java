@@ -1,31 +1,30 @@
-package Day1;
+package day1;
+
 import java.util.Scanner;
 
 public class Temperature {
 
-	  static double convertToFarenheit(double c)
+	  public double convertToFarenheit(double celsius)
 	{
-		return (c*9/5)+32;
+		return (celsius*9/5)+32;
 	}
-	  static double convertToCelsius(double f)
+	  public double convertToCelsius(double farenheit)
 	{
-		return (f-32)*5/9;
+		return (farenheit-32)*5/9;
 	}
 	
 	public static void main(String[] args) {
-		Scanner sc= new Scanner(System.in);
-		
-System.out.println("Celsius =" );
-double c,f;
-c=sc.nextDouble();
-System.out.println("Fahrenheit =" );
-f=sc.nextDouble();
-System.out.println(" Convert To Fahrenheit ="+convertToFarenheit(c));
-
-System.out.println(" Convert To Celsius ="+convertToCelsius(f));
-sc.close();
-
-
+      
+      Scanner scanner= new Scanner(System.in);
+      System.out.println("Celsius =" );
+      double celsius,farenheit;
+      celsius=scanner.nextDouble();
+      System.out.println("Fahrenheit =" );
+      farenheit=scanner.nextDouble();
+      Temperature temperature =new Temperature();
+      System.out.println(" Convert To Fahrenheit ="+temperature.convertToFarenheit(celsius));
+      System.out.println(" Convert To Celsius ="+temperature.convertToCelsius(farenheit));
+      scanner.close();
 
 	}
 
