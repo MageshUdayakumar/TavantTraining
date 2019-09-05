@@ -8,10 +8,13 @@ class HelloWorldTest {
 
 	@Test
 	void test() {
-		HelloWorld prg = new HelloWorld();
-		String output =prg.getMessage();
+		HelloWorld helloworld = new HelloWorld();
+		/*success*/
+		String output =helloworld.getMessage();
 		assertEquals("HelloWorld",output);
-		String output1 =prg.getMessage();
+		
+		/*fail*/
+		String output1 =helloworld.getMessage();
 		assertEquals("HelloWorl",output1);
 	}
 
