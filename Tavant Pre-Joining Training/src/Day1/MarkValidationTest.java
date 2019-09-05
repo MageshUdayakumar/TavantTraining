@@ -9,10 +9,13 @@ class MarkValidationTest {
 	@Test
 	void test() {
 		MarkValidation Mark = new MarkValidation();
+               /*success*/
 		String out = Mark.isPass(40);
 		assertEquals("Pass",out);
 		String out1 = Mark.markGrade(40);
 		assertEquals("Grade D",out1);
+		
+		/*fail*/
 		String output = Mark.isPass(40);
 		assertEquals("Fail",output);
 		String output1 = Mark.markGrade(40);
