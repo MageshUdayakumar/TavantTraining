@@ -1,4 +1,4 @@
-package Day1;
+package day1;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,6 +13,10 @@ class MarkValidationTest {
 		assertEquals("Pass",out);
 		String out1 = Mark.markGrade(40);
 		assertEquals("Grade D",out1);
+		String output = Mark.isPass(40);
+		assertEquals("Fail",output);
+		String output1 = Mark.markGrade(40);
+		assertEquals("Grade c",output1);
 	}
 
 }
