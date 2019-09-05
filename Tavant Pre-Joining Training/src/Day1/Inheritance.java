@@ -27,11 +27,11 @@ package day1;
 	public class Inheritance {
 		
 	public static void main(String[] args) {
-		Cat c =new Cat();
-		Dog d =new Dog();
-		c.Meow();
-		d.Bark();
-		c.Sound();
+		Cat cat =new Cat();
+		Dog dog =new Dog();
+		cat.Meow();
+		dog.Bark();
+		cat.Sound();
 			
 		
 	}
