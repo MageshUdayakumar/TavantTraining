@@ -1,13 +1,13 @@
-package Day1;
+package day1;
 
 import java.util.Scanner;
 
 public class SumOfNumbers {
 	
-	 static int SumOfEvenNumber(int s,int f)
+	 public int SumOfEvenNumber(int start,int end)
 		{
 			int i,p=0;
-			for(i=s;i<=f;i++)
+			for(i=start;i<=end;i++)
 			{
 				if(i%2==0)
 				{
@@ -17,10 +17,10 @@ public class SumOfNumbers {
 			return p;
 			
 		}
-	 static int SumOfOddNumber(int s,int f)
+	 public int SumOfOddNumber(int start,int end)
 		{
 			int i,p=0;
-			for(i=s;i<=f;i++)
+			for(i=start;i<=end;i++)
 			{
 				if(i%2!=0)
 				{
@@ -32,16 +32,16 @@ public class SumOfNumbers {
 		}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int s,e;
+		Scanner scanner = new Scanner(System.in);
+		int start,end;
 		System.out.println("Start=");
-		s=sc.nextInt();
+		start=scanner.nextInt();
 		System.out.println("End=");
-		e=sc.nextInt();
-		
-		System.out.println("Sumofeven="+SumOfEvenNumber(s,e) );
-		System.out.println("Sumofodd="+SumOfOddNumber(s,e) );
-		sc.close();
+		end=scanner.nextInt();
+		SumOfNumbers sumofnumber = new SumOfNumbers();
+		System.out.println("Sumofeven="+sumofnumber.SumOfEvenNumber(start,end) );
+		System.out.println("Sumofodd="+sumofnumber.SumOfOddNumber(start,end) );
+		scanner.close();
 		
 		
 		
